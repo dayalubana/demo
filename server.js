@@ -4,6 +4,9 @@ var app = express();
 app.get('/',(req,res)=>{
     res.send('helo');
 })
+app.post('/posts',(req,res)=>{
+    res.json([{name:'posts',number:2870}])
+})
 app.get('/posts',(req,res)=>{
     res.json([{name:'abc',age:20}])
 })
